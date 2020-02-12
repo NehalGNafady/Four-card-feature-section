@@ -4,9 +4,11 @@ header{text-align: center;
        margin-bottom: 25px;
        margin-top: 50px;}
 
-header h1{font-weight: 200}
+header h1{font-weight: 200;
+          color: hsl(229, 6%, 66%)}
 
 header h1 span{font-weight: 600;
+                color: hsl(234, 12%, 34%);
                font-size: 38px;}
 
 header p{color: hsl(229, 6%, 66%);
