@@ -1,50 +1,82 @@
-  
 body{ font-size: 15px; background-color: #fafafa}
 
-.full-content{    margin: 50px 100px;}
-
-header{text-align: center}
+header{text-align: center;
+       margin-bottom: 25px;
+       margin-top: 50px;}
 
 header h1{font-weight: 200}
 
-header h2{font-weight: 600}
+header h1 span{font-weight: 600;
+               font-size: 38px;}
 
-header p{color: hsl(229, 6%, 66%); margin: 0 137px;}
+header p{color: hsl(229, 6%, 66%);
+         margin: 0 137px;
+         padding-top: 5px;}
 
-.content{   margin-left: 45px; 
-            margin-top: 25px;    
-            display: flex;}
+section{width: 300px}
 
-section {
-        width: 290px;}
+.min-margin { margin: 4px -15px;}
 
-main > div{    margin-right: -45px;
-}
+.min-margin img {width: 20%;
+             float: right;
+             padding-bottom: 30px;
+             margin-top: 10px}
+
+.min-margin h2{font-size: 20px; font-weight: 600}
+
+.min-margin p{font-size: 15px;
+           color: hsl(229, 6%, 66%);
+           font-weight: 200}
+
+.cards{margin-left: 26px;}
 
 .cyan, .red, .orange, .blue { background: #fff; 
-                                margin: 20px 40px;
+                                margin: 20px 40px; 
                                 border: 4px solid #fff; 
-                                border-radius: 10px; 
+                                border-radius: 10px;
                                 height: 220px;
-                                box-shadow: 1px 10px 10px #e8e8e8;}
+                                box-shadow: 1px 10px 10px #e8e8e8;   
+                                padding: 25px;}
 
-.cyan{border-top-color:hsl(180, 62%, 55%); 
+.cyan{border-top-color:hsl(180, 62%, 55%);   
       margin-top: 145px; }
 
 .red{border-top-color:hsl(0, 78%, 62%)}
 
 .orange{border-top-color:hsl(34, 97%, 64%);
         margin-left: 40px;
-        margin-top: 30px;}
+        margin-top: 20px;}
 
-.blue{border-top-color:hsl(212, 86%, 64%);
+.blue{border-top-color:hsl(212, 86%, 64%); 
       margin-top: 145px;}
 
-.content img {float: right; 
-              margin-top: 25px;}
+.attribution { 
+                font-size: 13px;
+                margin-left: 20px;
+                text-align: center;
+                margin-top: 15px; }
 
-.attribution { font-size: 11px; 
-               text-align: center; }
-
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {color:hsl(34, 100%, 50%) }
   
+@media (max-width: 992px) {
+    .full{}
+    header{}
+    header h1{font-size: 35px;}
+    header h1 span{font-size: 34px;}
+    header p{font-size: 15px;
+             margin-left: 0;
+             margin-right: 0;}
+    .cards{ margin-top: 0px;
+            margin-left: 0;}
+    
+    section{    width: 320px;}
+    
+    .cyan, .red, .orange, .blue{margin-top: 3px}
+
+    .attribution{margin-top: 0}
+    
+    .attribution a { color: hsl(212, 86%, 64%);}
+    
+    
+}
+
